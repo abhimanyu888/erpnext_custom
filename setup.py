@@ -1,6 +1,17 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 import re, ast
+setup(
+	name='erpnext',
+	version=version,
+	description='Open Source ERP',
+	author='Frappe Technologies',
+	author_email='info@erpnext.com',
+	packages=find_packages(),
+	zip_safe=False,
+	include_package_data=True,
+	install_requires=install_requires
+)
 
 with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
