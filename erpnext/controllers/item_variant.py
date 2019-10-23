@@ -12,6 +12,9 @@ from six import string_types
 class ItemVariantExistsError(frappe.ValidationError): pass
 class InvalidItemAttributeValueError(frappe.ValidationError): pass
 class ItemTemplateCannotHaveStock(frappe.ValidationError): pass
+class ItemVariantExistsError(frappe.ValidationError): pass
+class InvalidItemAttributeValueError(frappe.ValidationError): pass
+class ItemTemplateCannotHaveStock(frappe.ValidationError): pass
 
 @frappe.whitelist()
 def get_variant(template, args=None, variant=None, manufacturer=None,
